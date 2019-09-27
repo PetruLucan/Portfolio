@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="background-wrap">
+        <video id="bg" src="background_video.mp4" autoplay="true" loop="true" muted="true"></video>
+    </div>
+    <div id="introduction" class="center">
+        <p class="title">
+            Hi, I'm Petru!
+        </p>
+        <button id="goDown" class="down">
+            <i class="fa fa-angle-down"></i>
+        </button>
+    </div>
+
+    <div id="main" class="hidden">
+
+        <ul class="socialMediaIcons">
+            <li><a href="https://github.com/PetruLucan"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <img id="profile-image" onclick="change();" src="assets/profilePic1.jpg">
+            <li><a href="https://www.linkedin.com/in/petru-lucan-14482315b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="column one">
+            <h2 class="overall-text" style="padding-bottom: 25px; margin-left: 50px; font-size:40px;">About me</h2>
+
+            <p class="overall-text text-bg">
+                I’m a young 26-years-old man and I intend to start a new career in IT.
+                Teamwork, dedication, desire to know more, are just some of the qualities that push me further and help
+                me evolve.
+            </p>
+        </div>
+
+        <div class="column two" style="left:65%;">
+            <h2 class="overall-text" style="padding-bottom: 25px; font-size:40px;">Information</h2>
+
+
+            <div class="info overall-text">
+                <i class="fa fa-user icon"></i>
+                <span class="text p-name">Petru Lucan</span>
+            </div>
+            <div class="info overall-text">
+                <i class="fa fa-envelope icon"></i>
+                <span class="text u-email">lucanpetru11@gmail.com</span>
+
+            </div>
+            <div class="info overall-text">
+                <i class="fa fa-map-marker icon"></i>
+                <span class="text p-region">Iasi, Romania</span>
+            </div>
+        </div>
+
+
+        <section id="section">
+            <h1>Skills</h1>
+            <p class="overall-text subheader-text">
+                Since i was a kid i loved computers and tech, time passed and now i'm eager to start fresh with a
+                new career in IT. I think programming will keep me in touch with the world i love, and give me the
+                state in which i can be at my best.
+            </p>
+
+
+            <h2 style="padding-bottom: 0;">Coding Skills</h2>
+            <hr style="position:relative; width:97%; left:15px; border-color:rgba(52, 4, 71, 0.493)">
+
+            <h3>Programming Languages</h3>
+            <div class="codingSkills">
+                <div class="skill-name">Javascript</div>
+                <ul id="skillsUl" class="overall-text">
+                    <li>
+                        JavaScript basics (variables, operators, strings, arrays)
+                    </li>
+                    <li>
+                        Code Blocks (conditional statements, loops, functions, and events)
+                    </li>
+                    <li>
+                        JavaScript objects (OOP, prototypes, inheritance, JSON format)
+                    </li>
+                    <li>
+                        APIs
+                    </li>
+                </ul>
+                <hr class="insideLines">
+                <div class="skill-name">HTML:5</div>
+                <ul id="skillsUl" class="overall-text">
+                    <li>
+                        Semantic elements
+                    </li>
+                    <li>
+                        Atributes or form elements
+                    </li>
+                    <li>
+                        Graphic elements
+                    </li>
+                    <li>
+                        Multimedia elements
+                    </li>
+                </ul>
+                <hr class="insideLines">
+                <div class="skill-name">CSS:3</div>
+                <ul id="skillsUl" class="overall-text">
+                    <li>
+                        CSS Selectors
+                    </li>
+                    <li>
+                        CSS Links - pseudo-selectors
+                    </li>
+                    <li>
+                        CSS Text, Fonts, Color, Background, Etc...
+                    </li>
+                </ul>
+            </div>
+
+
+            <hr style="position:relative; width:97%; left:15px; border-color:rgba(52, 4, 71, 0.493);">
+            <h3>Language proficiency</h3>
+            <div class="skill-name">
+                Romanian Language
+            </div>
+            <ul id="skillsUl" class="overall-text">
+                <li></li>
+                <li>
+                    Experimented Level
+                </li>
+                <li>
+                    Fluent speaking and writing level (Mother Language)
+                </li>
+            </ul>
+            <hr class="insideLines">
+            <div class="skill-name">
+                English Language
+            </div>
+            <ul id="skillsUl" class="overall-text">
+                <li></li>
+                <li>
+                    Level B1
+                </li>
+                <li>
+                    Coherent speaking and writing
+                </li>
+            </ul>
+            <hr class="insideLines">
+            <div class="skill-name">
+                Spanish Language
+            </div>
+            <ul id="skillsUl" class="overall-text">
+                <li></li>
+                <li>
+                    Level A2
+                </li>
+                <li>
+                    Moderate understanding level
+                </li>
+            </ul>
+
+            <h2>Professional Experience</h2>
+            <hr style="position:relative; width:97%; left:15px; border-color:rgba(52, 4, 71, 0.493);">
+            <h3>Company Name</h3>
+            <div style="display:inline-flex" class="skill-name">
+                <div>theKit<br>
+                    IT training school<br>
+                    March 2018
+                </div>
+                <p class="about-exp">The place where i successfully completed the JavaScript Professional Programme</p>
+            </div>
+            <hr class="insideLines">
+            <div style="display:inline-flex" class="skill-name">
+                <div>Auchan Romania <br>
+                    Retail Industry<br>
+                    29.12.2014 - Now</div>
+                <p class="about-exp">I generally care that the department I’m working on is set up during the given time. </p>
+            </div>
+        </section>
+        
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
