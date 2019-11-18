@@ -44,7 +44,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.down {
+.downBtn {
     position: absolute;
     left: 45%;
     top: 100px;
@@ -58,7 +58,7 @@ body {
     opacity: 0.7;
 }
 
-.down:before {
+.downBtn:before {
     content: '';
     position: absolute;
     width: 50%;
@@ -66,7 +66,7 @@ body {
     border-radius: 50%;
 }
 
-.down .fa {
+.downBtn .fa {
     font-size: 60px;
     position: absolute;
     top: 50%;
@@ -105,6 +105,7 @@ body {
 
 .socialMediaIcons ul {
     display: flex;
+    align-items: center;
 }
 
 ul li {
@@ -161,14 +162,19 @@ ul li:nth-child(3) a:before {
     background: #0077B5;
 }
 
-.text-bg {
+.text {
     background-color: rgba(255, 255, 255, .7);
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
     border-radius: 15px;
-    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: #0077B5;
 }
 
-img {
+
+section.socialMediaIcons img {
     width: 150px;
     height: 150px;
     margin: 0 10px;
@@ -179,53 +185,20 @@ img {
     position: absolute;
     top: 75%;
     display: flex;
+    justify-content: space-around;
+}
+section.column div.wrapInfo{
+    width:30%;
 }
 
-.column .left {
-    position: relative;
-    left: 10%;
-    width: 30%;
-}
-
-.column .left.h2 {
-    padding-bottom: 25px;
-    margin-left: 50px;
-    font-size: 40px;
-}
-
-.column .right {
-    position: relative;
-    left: 35%;
-    width: 30%;
-}
-
-.column .right.h2 {
-    padding-bottom: 25px;
-    font-size: 40px;
-}
-
-.column .info {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: rgba(255, 255, 255, .7);
-    border-radius: 15px;
-    margin-bottom: 5px;
-}
-
-.column .info .icon {
+.column .icon {
     width: 3.5rem;
     text-align: center;
     font-size: 23px;
 }
 
-.column .info .text {
-    border-left: 1px solid #ddd;
-    padding-left: 15px;
-    font-size: 25px;
-    font-weight: 300;
-}
 
-#section {
+section.content {
     position: absolute;
     top: 150%;
     width: 80%;
@@ -233,7 +206,7 @@ img {
     padding: 60px 0 60px 0;
 }
 
-#main .subheader-text {
+section.content div .subheader-text {
     display: block;
     text-align: center;
     margin-bottom: 20px;
@@ -250,14 +223,14 @@ img {
 #main h1 {
     color: rgb(13, 75, 109);
     text-align: center;
-    font-size: 60px;
-    line-height: 46px;
+    font-size: 4rem;
+    line-height: 1rem;
     padding-bottom: 1rem;
-    margin: 0;
+    font-weight: 380;
 }
 
 #main h2 {
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 3.916rem;
     text-align: center;
@@ -325,4 +298,51 @@ section div.overallDescription {
 
 .description {
     margin-left: 20px;
+}
+
+
+@media screen  and (max-width: 768px){
+    div p.title {
+        font-size: 4rem;
+    }
+    section.socialMediaIcons{
+        top:25%;
+    }
+    .socialMediaIcons ul{
+        align-items: center;
+    }
+    .socialMediaIcons ul li a {
+        margin: 0 100px;
+    }
+    section.column{
+        top:40%;
+        display: flex;
+        justify-content: space-around;
+    }
+    section.column div.wrapInfo{
+        width: 35%;
+    }
+    section.column div.wrapInfo .text{
+        font-size: 1rem;
+    }
+    #main h2{
+        font-size: 2rem;
+    }
+
+    section.content{
+        top:75%;
+    }
+    #main h1{
+        font-size: 3rem;
+        margin-bottom: 5%;
+    }
+    section.content div .subheader-text{
+        width:70%;
+        margin:0 auto;
+        font-size: 1.1rem;
+    }
+    section.content div.overallContentStyle{
+        font-size: 1rem;
+    }
+
 }
