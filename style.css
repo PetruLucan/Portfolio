@@ -98,7 +98,7 @@ body {
 
 .socialMediaIcons {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -183,7 +183,7 @@ section.socialMediaIcons img {
 
 .column {
     position: absolute;
-    top: 75%;
+    top: 60%;
     display: flex;
     justify-content: space-around;
 }
@@ -200,7 +200,7 @@ section.column div.wrapInfo{
 
 section.content {
     position: absolute;
-    top: 150%;
+    top: 140%;
     width: 80%;
     left: 10%;
     padding: 60px 0 60px 0;
@@ -296,10 +296,29 @@ section div.overallDescription {
     position: relative;
 }
 
-.description {
+/* div.academicField div.overallDescription p,
+div.workField div.overallDescription p {
     margin-left: 20px;
-}
+}; */
 
+@media screen and (max-width: 1024px){
+    
+    section.content div.overallContentStyle{
+        font-size: 1rem;
+        overflow: auto;
+    }
+    section.content div.overallDescription{
+        flex-basis: 80%;
+        margin:1% 0%;
+    }
+    section.content div.overallNames{
+        flex-basis: 20%;
+    }
+    section.content div.academicField div.overallDescription{
+        height:7.2rem;
+        overflow: auto;
+    }
+}
 
 @media screen  and (max-width: 768px){
     div p.title {
@@ -340,9 +359,21 @@ section div.overallDescription {
         width:70%;
         margin:0 auto;
         font-size: 1.1rem;
+        line-height: 2rem;
     }
     section.content div.overallContentStyle{
         font-size: 1rem;
+        overflow: auto;
+    }
+    section.content div.overallDescription{
+        flex-basis: 80%;
+    }
+    section.content div.overallNames{
+        flex-basis: 20%;
+    }
+    section.content div.academicField div.overallDescription{
+        height:7.2rem;
+        overflow: auto;
     }
 
 }
