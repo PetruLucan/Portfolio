@@ -173,7 +173,6 @@ ul li:nth-child(3) a:before {
     color: #0077B5;
 }
 
-
 section.socialMediaIcons img {
     width: 150px;
     height: 150px;
@@ -187,8 +186,9 @@ section.socialMediaIcons img {
     display: flex;
     justify-content: space-around;
 }
-section.column div.wrapInfo{
-    width:30%;
+
+section.column div.wrapInfo {
+    width: 30%;
 }
 
 .column .icon {
@@ -196,7 +196,6 @@ section.column div.wrapInfo{
     text-align: center;
     font-size: 23px;
 }
-
 
 section.content {
     position: absolute;
@@ -296,84 +295,126 @@ section div.overallDescription {
     position: relative;
 }
 
-/* div.academicField div.overallDescription p,
-div.workField div.overallDescription p {
-    margin-left: 20px;
-}; */
-
-@media screen and (max-width: 1024px){
-    
-    section.content div.overallContentStyle{
-        font-size: 1rem;
+@media screen and (max-width: 1024px) {
+    section.column {
+        top: 55%;
+    }
+    section.content {
+        top: 120%;
+    }
+    section.content div.overallContentStyle {
+        font-size: 1.2rem;
         overflow: auto;
     }
-    section.content div.overallDescription{
+    section.content div.overallDescription {
         flex-basis: 80%;
-        margin:1% 0%;
+        margin: 1% 0%;
     }
-    section.content div.overallNames{
+    section.content div.overallNames {
         flex-basis: 20%;
     }
-    section.content div.academicField div.overallDescription{
-        height:7.2rem;
+    section.content div.academicField div.overallDescription {
+        height: 6rem;
         overflow: auto;
     }
 }
 
-@media screen  and (max-width: 768px){
+@media screen and (max-width: 768px) {
     div p.title {
         font-size: 4rem;
     }
-    section.socialMediaIcons{
-        top:25%;
+    section.socialMediaIcons {
+        top: 25%;
     }
-    .socialMediaIcons ul{
+    .socialMediaIcons ul {
         align-items: center;
     }
     .socialMediaIcons ul li a {
         margin: 0 100px;
     }
-    section.column{
-        top:40%;
+    section.column {
+        top: 40%;
         display: flex;
         justify-content: space-around;
     }
-    section.column div.wrapInfo{
+    section.column div.wrapInfo {
         width: 35%;
     }
-    section.column div.wrapInfo .text{
+    section.column div.wrapInfo .text {
         font-size: 1rem;
     }
-    #main h2{
+    #main h2 {
         font-size: 2rem;
     }
-
-    section.content{
-        top:75%;
+    section.content {
+        top: 75%;
     }
-    #main h1{
+    #main h1 {
         font-size: 3rem;
         margin-bottom: 5%;
     }
-    section.content div .subheader-text{
-        width:70%;
-        margin:0 auto;
+    section.content div .subheader-text {
+        width: 70%;
+        margin: 0 auto;
         font-size: 1.1rem;
         line-height: 2rem;
     }
-    section.content div.overallContentStyle{
+    section.content div.overallContentStyle {
         font-size: 1rem;
         overflow: auto;
     }
-    section.content div.overallDescription{
+    section.content div.overallDescription {
         flex-basis: 80%;
     }
-    section.content div.overallNames{
+    section.content div.overallNames {
         flex-basis: 20%;
     }
-    section.content div.academicField div.overallDescription{
-        height:7.2rem;
+    section.content div.academicField div.overallDescription {
+        height: 7.2rem;
         overflow: auto;
     }
+}
 
+@media screen and (max-width: 360px) {
+    section.socialMediaIcons {
+        top: 15%;
+    }
+    section.socialMediaIcons ul li a {
+        margin: 0 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 25px;
+    }
+    section.socialMediaIcons img {
+        width: 80px;
+        height: 80px;
+    }
+    section.column {
+        display: block;
+        top: 30%;
+    }
+    section.column div.wrapInfo {
+        width: 100%;
+    }
+    #main h1 {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+    #main h2 {
+        margin-top: 2rem;
+        line-height: 1;
+        font-size: 1.4rem;
+    }
+    #main h3 {
+        font-size: 20px;
+        font-weight: 200;
+        margin-left: 10px;
+    }
+    section.content p.subheader-text {
+        font-size: 1.1rem;
+        line-height: 1;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
