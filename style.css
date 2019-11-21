@@ -376,6 +376,12 @@ section div.overallDescription {
 }
 
 @media screen and (max-width: 360px) {
+    button.downBtn{
+        position: absolute;
+        top:120%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
     section.socialMediaIcons {
         top: 15%;
     }
@@ -411,10 +417,32 @@ section div.overallDescription {
         font-weight: 200;
         margin-left: 10px;
     }
+    section.content {
+        width: 90%;
+        left: 5%;
+    }
     section.content p.subheader-text {
         font-size: 1.1rem;
         line-height: 1;
         width: 100%;
         margin: 0 auto;
+    }
+    .overallContentStyle {
+        display: block;
+    }
+    #skillsUl {
+        display: block;
+        line-height: 1rem;
+    }
+    #skillsUl li {
+        text-align: start;
+        padding: 5px;
+    }
+    div.academicField div.overallDescription p {
+        padding: 0.6rem;
+    }
+    div.workField div.overallDescription p {
+        padding: 0.6rem;
+        overflow: auto;
     }
 }
