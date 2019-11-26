@@ -7,8 +7,17 @@ goDownEl = document.addEventListener("click", onClick);
 
 function onClick() {
     console.log("hi")
-    introductionEl.classList.add("hidden");
-    mainEl.classList.remove("hidden")
+    
+    introductionEl.classList.add("introduction-fade")
+    mainEl.classList.add("mainEl-swipe")
+    setTimeout(function(){
+        introductionEl.classList.add("hidden");
+    }, 700);
+    setTimeout(function(){
+        mainEl.classList.remove("hidden")
+    },700)
+    
+
 }
 setInterval("change()", 5000);
 

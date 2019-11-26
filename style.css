@@ -6,20 +6,38 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(16, 175, 141);
+    font-family: 'Prompt', sans-serif;
 }
-#main{
+
+#main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.introduction-fade {
+    opacity: 0;
+    transition: 700ms;
+}
+
+.mainEl-swipe {
+    opacity: 1;
+    animation: ease-in-out;
+    transition: 1s;
+}
+
+.visible {
+    opacity: 0;
+}
+
 .hidden {
-    display: none !important
+    display: none !important;
 }
 
 .title {
     font-size: 70px;
-    color: rgb(88, 88, 206);
+    color: rgb(219, 218, 247);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -47,6 +65,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {
+        top: -50px
+    }
+    ;
+    100% {
+        top: 200px
+    }
 }
 
 .downBtn {
@@ -56,9 +87,9 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #04a9f5;
+    background: #063c55;
     border: 2px solid #fff;
-    box-shadow: 0 0 0 5px rgb(17, 78, 209), 0 5px 25px rgba(0, 0, 0, .8);
+    box-shadow: 0 0 0 5px rgb(26, 41, 73), 0 5px 25px rgba(0, 0, 0, .8);
     overflow: hidden;
     opacity: 0.7;
 }
@@ -104,7 +135,7 @@ body {
 .socialMediaIcons {
     display: flex;
     justify-content: space-around;
-    margin-top:10%;
+    margin-top: 10%;
 }
 
 .socialMediaIcons ul {
@@ -203,6 +234,7 @@ section.content {
     width: 80%;
     padding: 60px 0 60px 0;
 }
+
 section.content h2 {
     border-bottom: 2px solid rgba(52, 4, 71, 0.493);
 }
@@ -217,7 +249,7 @@ section.content div .subheader-text {
     margin-left: 25%;
     color: #0077B5;
     font-size: 25px;
-    background: rgba(73, 161, 233, 0.377);
+    background-color: rgba(255, 255, 255, .7);
     border-radius: 15px;
 }
 
@@ -252,11 +284,6 @@ section.content div .subheader-text {
     color: rgb(13, 75, 109);
 }
 
-.overall-text {
-    color: #0077B5;
-    font-size: 25px;
-}
-
 #skillsUl {
     width: 95%;
     display: flex;
@@ -269,7 +296,7 @@ section.content div .subheader-text {
 }
 
 .overallContentStyle {
-    background: rgba(73, 161, 233, 0.377);
+    background-color: rgba(255, 255, 255, .7);
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -378,10 +405,10 @@ section div.overallDescription {
 }
 
 @media screen and (max-width: 360px) {
-    button.downBtn{
+    button.downBtn {
         position: absolute;
-        top:120%;
-        left:50%;
+        top: 120%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
     section.socialMediaIcons {
